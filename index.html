@@ -13,22 +13,22 @@
 :root {
   --paper: #f5f8fa;
   --panel: #ffffff;
-  --ink: #0e1114;
+  --ink: #1f2226;
   --muted: #545e68;
   --rule: #d8e1e8;
-  --deep: #0e1114;
+  --deep: #1f2226;
   --deep-fg: #f1f6f9;
   --deep-muted: #a2afba;
-  --accent: #5bc8f5;
-  --accent-hover: #3db8ec;
-  --accent-fg: #0e1114;
-  --accent-text: #0a76a8;
-  --tint: #e8f5fc;
-  --ok: #0a76a8;
+  --accent: #78cbec;
+  --accent-hover: #5bbde4;
+  --accent-fg: #1f2226;
+  --accent-text: #14729c;
+  --tint: #eaf6fc;
+  --ok: #14729c;
   --logo-plate: #ffffff;
   --logo-pad: 0;
-  --brand-blue: #5bc8f5;
-  --on-blue-fg: #0e1114;
+  --brand-blue: #78cbec;
+  --on-blue-fg: #1f2226;
   --f-display: "Libre Caslon Text", "Iowan Old Style", Georgia, "Times New Roman", serif;
   --f-body: "Open Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
@@ -39,14 +39,14 @@
   :root:not([data-theme="light"]) {
     --paper: #0b0e11; --panel: #13181d; --ink: #e9eff3; --muted: #9ba8b3; --rule: #252d35;
     --deep: #161c22; --deep-fg: #f1f6f9; --deep-muted: #a2afba;
-    --accent: #5bc8f5; --accent-hover: #86d7f8; --accent-fg: #0e1114; --accent-text: #7fd5f8; --tint: #14232d; --ok: #7fd5f8; --logo-pad: 0.35rem 0.6rem;
+    --accent: #78cbec; --accent-hover: #9bd9f2; --accent-fg: #1f2226; --accent-text: #8fd6f2; --tint: #14232d; --ok: #8fd6f2; --logo-pad: 0.35rem 0.6rem;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #0b0e11; --panel: #13181d; --ink: #e9eff3; --muted: #9ba8b3; --rule: #252d35;
   --deep: #161c22; --deep-fg: #f1f6f9; --deep-muted: #a2afba;
-  --accent: #5bc8f5; --accent-hover: #86d7f8; --accent-fg: #0e1114; --accent-text: #7fd5f8; --tint: #14232d; --ok: #7fd5f8; --logo-pad: 0.35rem 0.6rem;
+  --accent: #78cbec; --accent-hover: #9bd9f2; --accent-fg: #1f2226; --accent-text: #8fd6f2; --tint: #14232d; --ok: #8fd6f2; --logo-pad: 0.35rem 0.6rem;
   color-scheme: dark;
 }
 
@@ -72,10 +72,11 @@ a { color: inherit; }
 /* Header */
 .site-head { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--panel); border-bottom: 1px solid var(--rule); }
 .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.9rem; }
-.brand { display: flex; align-items: center; text-decoration: none; flex-shrink: 1; min-width: 0; }
-.brand img { display: block; height: 2.5rem; width: auto; max-width: 100%; background: var(--logo-plate); padding: var(--logo-pad); border-radius: var(--r); }
+.brand { display: inline-flex; align-items: center; text-decoration: none; min-width: 0; background: var(--logo-plate); padding: var(--logo-pad); border-radius: var(--r); }
+.brand img { display: block; height: 2.6rem; width: auto; max-width: 100%; mix-blend-mode: multiply; }
 @media (max-width: 420px) { .brand img { height: 2rem; } }
-footer .brand img { height: 2.75rem; padding: 0.6rem 0.9rem; }
+footer .brand { padding: 0.5rem 0.9rem; justify-self: start; }
+footer .brand img { height: 2.75rem; }
 .nav { display: flex; align-items: center; gap: 1.4rem; }
 .nav a { text-decoration: none; font-size: 0.95rem; color: var(--muted); padding-block: 0.25rem; border-bottom: 1.5px solid transparent; }
 .nav a:hover { color: var(--ink); }
@@ -118,8 +119,8 @@ section.band.on-blue + section.band, section.band + section.band.on-blue { borde
 .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
 .hero-copy { display: grid; gap: 1.5rem; min-width: 0; }
 .hero h1 em { font-style: italic; color: var(--accent-text); }
-.portrait { margin: 0; display: grid; gap: 0.7rem; justify-self: end; width: 100%; max-width: 21rem; }
-.portrait img { width: 100%; aspect-ratio: 263 / 321; object-fit: cover; border-radius: var(--r); display: block; filter: saturate(0.92); }
+.portrait { margin: 0 14px 0 0; display: grid; gap: 1.4rem; justify-self: end; width: 100%; max-width: 21rem; }
+.portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 8%; border-radius: var(--r); display: block; box-shadow: 14px 14px 0 var(--brand-blue); }
 .portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 0.6rem; }
 .portrait figcaption b { font-weight: 600; }
 @media (max-width: 760px) {
@@ -182,7 +183,7 @@ section.band.on-blue + section.band, section.band + section.band.on-blue { borde
 
 /* About preview */
 .about-prev { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
-.about-prev img { width: 100%; border-radius: var(--r); aspect-ratio: 263/321; object-fit: cover; }
+.about-prev img { width: 100%; border-radius: var(--r); aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 6%; }
 blockquote { margin: 0; font-family: var(--f-display); font-size: clamp(1.25rem, 2.3vw, 1.6rem); line-height: 1.45; }
 @media (max-width: 640px) { .about-prev { grid-template-columns: 1fr; } .about-prev img { max-width: 11rem; } }
 
@@ -313,7 +314,7 @@ footer ul a:hover { color: var(--deep-fg); }
 <header class="site-head">
   <div class="wrap">
     <a class="brand" href="#home" data-nav>
-      <img src="logo.webp" alt="The Fractional COO, home" width="1208" height="240">
+      <img src="logo.jpg" alt="thefractionalCOO, home" width="2048" height="508">
     </a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Main">
@@ -344,7 +345,7 @@ footer ul a:hover { color: var(--deep-fg); }
         </div>
       </div>
       <figure class="portrait">
-        <img src="victoria.png" alt="Portrait of Victoria, founder of Best Fractional COO">
+        <img src="victoria.jpg" alt="Portrait of Victoria, founder of Best Fractional COO">
         <figcaption><b>Victoria</b><span class="muted">Founder &amp; Fractional COO</span></figcaption>
       </figure>
     </div>
@@ -452,7 +453,7 @@ footer ul a:hover { color: var(--deep-fg); }
 
   <section class="band">
     <div class="wrap about-prev">
-      <img src="victoria.png" alt="Victoria, Fractional COO">
+      <img src="victoria.jpg" alt="Victoria, Fractional COO">
       <div class="stack">
         <p class="label">About Victoria</p>
         <blockquote>"I'm not a business coach standing outside the operation telling you what to do. I'm an operator."</blockquote>
@@ -754,7 +755,7 @@ footer ul a:hover { color: var(--deep-fg); }
         <div class="actions"><a class="btn" href="#contact">Book a Fit Call</a></div>
       </div>
       <figure class="portrait" style="justify-self:start">
-        <img src="victoria.png" alt="Victoria, founder of Best Fractional COO">
+        <img src="victoria.jpg" alt="Victoria, founder of Best Fractional COO">
         <figcaption><b>Victoria</b><span class="muted">Founder &amp; Fractional COO</span></figcaption>
       </figure>
     </div>
@@ -896,7 +897,7 @@ footer ul a:hover { color: var(--deep-fg); }
   <div class="wrap">
     <div class="foot-grid">
       <div class="stack" style="gap:1rem">
-        <a class="brand" href="#home"><img src="logo.webp" alt="The Fractional COO" width="1208" height="240"></a>
+        <a class="brand" href="#home"><img src="logo.jpg" alt="thefractionalCOO" width="2048" height="508"></a>
         <p class="muted" style="max-width:26rem">Helping growing law firms build the people, processes, accountability and operating systems they need to scale, without hiring a full-time COO.</p>
       </div>
       <ul>

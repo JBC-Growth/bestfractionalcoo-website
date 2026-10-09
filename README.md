@@ -20,7 +20,7 @@ Open `index.html` in a browser. No build step.
 
 ## Open items
 
-- Confirm business name ("Best Fractional COO" vs. logo's "The Fractional COO")
+- Confirm business name ("Best Fractional COO" vs. logo's "thefractionalCOO")
 - Real contact email, phone, and booking link
 - Verified track-record figures and testimonials for the About page
 - Contact form needs a real form handler before launch
