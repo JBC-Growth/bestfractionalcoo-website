@@ -151,6 +151,11 @@ section.band.on-blue + section.band, section.band + section.band.on-blue { borde
 .meter i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .25s; }
 .score { font-family: var(--f-mono); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
 #readyMsg { font-size: 0.98rem; }
+.result { background: var(--tint); border-radius: var(--r); padding: 1.1rem 1.2rem; display: grid; gap: 0.55rem; justify-items: start; }
+.result b { font-family: var(--f-display); font-weight: 400; font-size: 1.3rem; line-height: 1.25; }
+.result p { font-size: 0.97rem; }
+.result .btn { margin-top: 0.3rem; }
+.small { font-size: 0.85rem; }
 
 /* Offer cards */
 .offers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
@@ -387,7 +392,14 @@ footer ul a:hover { color: var(--deep-fg); }
         <div class="check-foot">
           <div class="meter" aria-hidden="true"><i id="meterBar"></i></div>
           <div class="score" id="scoreText">0 of 9 checked</div>
-          <p id="readyMsg" class="muted">Check the statements that describe your firm today.</p>
+          <p id="readyMsg" class="muted">Check the statements that describe your firm today to get a recommended next step.</p>
+          <div id="readyResult" class="result" hidden>
+            <span class="label">Recommended next step</span>
+            <b id="resTitle"></b>
+            <p id="resText"></p>
+            <a class="btn" href="#contact" id="resBtn">Book a Fit Call</a>
+            <span class="small muted">The items you checked will be added to your request.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -836,6 +848,7 @@ footer ul a:hover { color: var(--deep-fg); }
       </div>
       <div class="contact-grid">
         <form id="fitForm" novalidate>
+          <div id="fromCheck" class="form-msg" hidden></div>
           <div class="row2">
             <div class="field"><label for="f-name">Your name</label><input type="text" id="f-name" autocomplete="name" required></div>
             <div class="field"><label for="f-firm">Firm name</label><input type="text" id="f-firm" autocomplete="organization" required></div>
@@ -956,18 +969,52 @@ footer ul a:hover { color: var(--deep-fg); }
 
   // Readiness checklist
   var boxes = document.querySelectorAll("#checkList input");
+  var tiers = [
+    { max: 2, svc: "assessment", btn: "Request an Assessment",
+      title: "A few friction points worth a closer look",
+      text: "These are often symptoms of something larger. An Operational Health Assessment pinpoints what is behind them and gives you a prioritized 90-day roadmap." },
+    { max: 5, svc: "reset", btn: "Book a Fit Call",
+      title: "Your firm is outgrowing its operation",
+      text: "A focused 90-Day Operating Reset is often the right fit at this stage. A short Fit Call will tell us which three to five priorities matter most." },
+    { max: 9, svc: "partnership", btn: "Book a Fit Call",
+      title: "The operation is holding the firm back",
+      text: "This is the work a Fractional COO does: owning the operating priorities alongside you until they stick. Start with a Fit Call." }
+  ];
+  var current = null;
+  function checkedItems() {
+    var out = [];
+    boxes.forEach(function (b) { if (b.checked) out.push(b.parentNode.textContent.trim()); });
+    return out;
+  }
   function score() {
-    var n = 0; boxes.forEach(function (b) { if (b.checked) n++; });
+    var n = checkedItems().length;
     document.getElementById("meterBar").style.width = (n / boxes.length * 100) + "%";
     document.getElementById("scoreText").textContent = n + " of " + boxes.length + " checked";
-    var msg = document.getElementById("readyMsg");
-    if (n === 0) msg.textContent = "Check the statements that describe your firm today.";
-    else if (n <= 2) msg.textContent = "A few friction points. An Operational Health Assessment can show whether they are symptoms of something larger.";
-    else if (n <= 5) msg.innerHTML = "Your firm is showing clear signs of outgrowing its operation. <a href=\"#contact\">Book a Fit Call</a> to talk through priorities.";
-    else msg.innerHTML = "The operation is likely holding the firm back. This is exactly the work a Fractional COO does. <a href=\"#contact\">Book a Fit Call</a>.";
+    document.getElementById("readyMsg").hidden = n > 0;
+    document.getElementById("readyResult").hidden = n === 0;
+    if (n === 0) { current = null; return; }
+    current = tiers.filter(function (t) { return n <= t.max; })[0];
+    document.getElementById("resTitle").textContent = current.title;
+    document.getElementById("resText").textContent = current.text;
+    document.getElementById("resBtn").textContent = current.btn;
   }
   boxes.forEach(function (b) { b.addEventListener("change", score); });
   score();
+
+  // Carry the checklist answers into the contact form
+  var autoText = "";
+  document.getElementById("resBtn").addEventListener("click", function () {
+    if (!current) return;
+    var items = checkedItems();
+    var r = document.querySelector('input[name="svc"][value="' + current.svc + '"]');
+    if (r) r.checked = true;
+    var ta = document.getElementById("f-msg");
+    var text = "From the readiness check, these describe our firm today:\n- " + items.join("\n- ") + "\n\n";
+    if (!ta.value.trim() || ta.value === autoText) { ta.value = text; autoText = text; }
+    var note = document.getElementById("fromCheck");
+    note.textContent = "You checked " + items.length + " of " + boxes.length + " signs on the readiness check. They're included in your message below, so the Fit Call can start where it matters.";
+    note.hidden = false;
+  });
 
   // Contact form (mockup: no real submission)
   document.getElementById("fitForm").addEventListener("submit", function (e) {
