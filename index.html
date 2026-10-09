@@ -4,340 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Best Fractional COO</title>
-<meta name="description" content="Fractional COO leadership for growing law firms.">
+<meta name="description" content="Fractional COO leadership for growing law firms. Build the people, processes, accountability and operating systems your firm needs to scale.">
+<link rel="icon" href="logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<style>
-/* Layout: left-aligned editorial columns on a cool white ground; brand black for structure, brand sky blue for actions and highlights. */
-:root {
-  --paper: #f5f8fa;
-  --panel: #ffffff;
-  --ink: #1f2226;
-  --muted: #545e68;
-  --rule: #d8e1e8;
-  --deep: #1f2226;
-  --deep-fg: #f1f6f9;
-  --deep-muted: #a2afba;
-  --accent: #78cbec;
-  --accent-hover: #5bbde4;
-  --accent-fg: #1f2226;
-  --accent-text: #14729c;
-  --tint: #eaf6fc;
-  --ok: #14729c;
-  --logo-plate: #ffffff;
-  --logo-pad: 0;
-  --brand-blue: #78cbec;
-  --on-blue-fg: #1f2226;
-  --f-display: "Libre Caslon Text", "Iowan Old Style", Georgia, "Times New Roman", serif;
-  --f-body: "Open Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
-  --wrap: 72rem;
-  --r: 4px;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #0b0e11; --panel: #13181d; --ink: #e9eff3; --muted: #9ba8b3; --rule: #252d35;
-    --deep: #161c22; --deep-fg: #f1f6f9; --deep-muted: #a2afba;
-    --accent: #78cbec; --accent-hover: #9bd9f2; --accent-fg: #1f2226; --accent-text: #8fd6f2; --tint: #14232d; --ok: #8fd6f2; --logo-pad: 0.35rem 0.6rem;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #0b0e11; --panel: #13181d; --ink: #e9eff3; --muted: #9ba8b3; --rule: #252d35;
-  --deep: #161c22; --deep-fg: #f1f6f9; --deep-muted: #a2afba;
-  --accent: #78cbec; --accent-hover: #9bd9f2; --accent-fg: #1f2226; --accent-text: #8fd6f2; --tint: #14232d; --ok: #8fd6f2; --logo-pad: 0.35rem 0.6rem;
-  color-scheme: dark;
-}
-
-* { box-sizing: border-box; }
-body { margin: 0; }
-img { max-width: 100%; }
-[hidden] { display: none !important; }
-html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
-body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-.wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
-h1, h2, h3 { font-family: var(--f-display); font-weight: 400; line-height: 1.15; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
-h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
-h2 { font-size: clamp(1.75rem, 3.4vw, 2.5rem); }
-h3 { font-size: 1.4rem; }
-p { margin: 0; }
-.lede { font-size: 1.2rem; color: var(--muted); max-width: 40rem; }
-.prose { max-width: 40rem; display: grid; gap: 1rem; }
-.label { font-family: var(--f-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-a { color: inherit; }
-:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
-
-/* Header */
-.site-head { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--panel); border-bottom: 1px solid var(--rule); }
-.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.9rem; }
-.brand { display: inline-flex; align-items: center; text-decoration: none; min-width: 0; background: var(--logo-plate); padding: var(--logo-pad); border-radius: var(--r); }
-.brand img { display: block; height: 2.6rem; width: auto; max-width: 100%; mix-blend-mode: multiply; }
-@media (max-width: 420px) { .brand img { height: 2rem; } }
-footer .brand { padding: 0.5rem 0.9rem; justify-self: start; }
-footer .brand img { height: 2.75rem; }
-.nav { display: flex; align-items: center; gap: 1.4rem; }
-.nav a { text-decoration: none; font-size: 0.95rem; color: var(--muted); padding-block: 0.25rem; border-bottom: 1.5px solid transparent; }
-.nav a:hover { color: var(--ink); }
-.nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
-.menu-btn { display: none; background: none; border: 1px solid var(--rule); color: var(--ink); font: 500 0.9rem var(--f-body); padding: 0.45rem 0.8rem; border-radius: var(--r); cursor: pointer; }
-@media (max-width: 960px) {
-  .menu-btn { display: inline-block; }
-  .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--paper); border-bottom: 1px solid var(--rule); flex-direction: column; align-items: stretch; gap: 0; padding: 0.5rem clamp(16px, 4vw, 40px) 1rem; }
-  .nav.open { display: flex; }
-  .nav a { padding-block: 0.7rem; border-bottom: 1px solid var(--rule); }
-  .nav a[aria-current="page"] { border-bottom-color: var(--rule); color: var(--accent-text); }
-  .nav .btn { margin-top: 0.8rem; text-align: center; }
-}
-
-/* Buttons */
-.btn { display: inline-block; text-decoration: none; font: 600 0.82rem var(--f-body); letter-spacing: 0.1em; text-transform: uppercase; padding: 0.95rem 1.5rem; border-radius: var(--r); border: 1.5px solid var(--accent); background: var(--accent); color: var(--accent-fg); cursor: pointer; transition: background .15s, border-color .15s; }
-.btn:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
-.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
-.btn.ghost:hover { background: var(--tint); }
-.btn.sm { padding: 0.6rem 1rem; font-size: 0.74rem; }
-.nav .btn { color: var(--accent-fg); border-bottom: 1.5px solid var(--accent); }
-.on-deep .btn.ghost { color: var(--deep-fg); border-color: var(--deep-fg); }
-.on-deep .btn.ghost:hover { background: rgba(255,255,255,0.08); }
-.actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-
-/* Sections */
-section.band { padding-block: clamp(3.5rem, 8vw, 6rem); }
-section.band + section.band { border-top: 1px solid var(--rule); }
-.on-deep { background: var(--deep); color: var(--deep-fg); }
-.on-deep .label, .on-deep .lede, .on-deep .muted { color: var(--deep-muted); }
-section.band.on-deep + section.band, section.band + section.band.on-deep { border-top: 0; }
-.on-blue { background: var(--brand-blue); color: var(--on-blue-fg); }
-.on-blue .stack > .label { color: var(--on-blue-fg); opacity: 0.75; }
-.on-blue .check { color: var(--ink); border-color: transparent; box-shadow: 0 10px 30px rgba(14, 17, 20, 0.12); }
-section.band.on-blue + section.band, section.band + section.band.on-blue { border-top: 0; }
-.sec-head { display: grid; gap: 1rem; margin-bottom: 2.5rem; max-width: 46rem; }
-.muted { color: var(--muted); }
-
-/* Hero */
-.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
-.hero-copy { display: grid; gap: 1.5rem; min-width: 0; }
-.hero h1 em { font-style: italic; color: var(--accent-text); }
-.portrait { margin: 0 14px 0 0; display: grid; gap: 1.4rem; justify-self: end; width: 100%; max-width: 21rem; }
-.portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 8%; border-radius: var(--r); display: block; box-shadow: 14px 14px 0 var(--brand-blue); }
-.portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 0.6rem; }
-.portrait figcaption b { font-weight: 600; }
-@media (max-width: 760px) {
-  .hero .wrap { grid-template-columns: 1fr; }
-  .portrait { justify-self: start; max-width: 15rem; }
-}
-
-.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
-.facts div { padding: 1.3rem 1.2rem 1.3rem 0; display: grid; gap: 0.2rem; }
-.facts div + div { border-left: 1px solid var(--rule); padding-left: 1.2rem; }
-.facts b { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; font-variant-numeric: tabular-nums; }
-@media (max-width: 640px) { .facts { grid-template-columns: 1fr; } .facts div + div { border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; } }
-
-/* Two column */
-.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
-@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
-
-/* Readiness checklist */
-.check { background: var(--panel); border: 1px solid var(--rule); border-radius: var(--r); }
-.check-head { padding: 1.2rem 1.4rem; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
-.check-head h3 { font-size: 1.15rem; }
-.check ul { list-style: none; margin: 0; padding: 0.4rem 0; }
-.check li label { display: grid; grid-template-columns: 1.25rem 1fr; gap: 0.8rem; padding: 0.6rem 1.4rem; cursor: pointer; font-size: 0.98rem; line-height: 1.45; }
-.check li label:hover { background: var(--tint); }
-.check input { accent-color: var(--accent-text); width: 1.05rem; height: 1.05rem; margin-top: 0.2rem; }
-.check-foot { border-top: 1px solid var(--rule); padding: 1.1rem 1.4rem; display: grid; gap: 0.7rem; }
-.meter { height: 6px; background: var(--tint); border-radius: 3px; overflow: hidden; }
-.meter i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .25s; }
-.score { font-family: var(--f-mono); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
-#readyMsg { font-size: 0.98rem; }
-.result { background: var(--tint); border-radius: var(--r); padding: 1.1rem 1.2rem; display: grid; gap: 0.55rem; justify-items: start; }
-.result b { font-family: var(--f-display); font-weight: 400; font-size: 1.3rem; line-height: 1.25; }
-.result p { font-size: 0.97rem; }
-.result .btn { margin-top: 0.3rem; }
-.small { font-size: 0.85rem; }
-
-/* Offer cards */
-.offers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
-@media (max-width: 900px) { .offers { grid-template-columns: 1fr; } }
-.offer { background: var(--panel); border: 1px solid var(--rule); border-radius: var(--r); padding: 1.7rem; display: grid; grid-template-rows: auto auto 1fr auto; gap: 1rem; }
-.offer.featured { border-color: var(--ink); box-shadow: 0 1px 0 var(--ink); }
-.offer .stage { display: flex; justify-content: space-between; gap: 0.5rem; }
-.price { font-family: var(--f-display); font-size: 1.9rem; font-variant-numeric: tabular-nums; color: var(--accent-text); line-height: 1.1; }
-.price small { font-family: var(--f-body); font-size: 0.85rem; color: var(--muted); display: block; margin-bottom: 0.2rem; letter-spacing: 0.02em; }
-.offer p { color: var(--muted); }
-.offer .link { font-weight: 600; font-size: 0.95rem; text-decoration: none; color: var(--accent-text); }
-.offer .link:hover { text-decoration: underline; }
-
-/* Process steps (a real sequence) */
-.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; counter-reset: s; }
-.steps li { counter-increment: s; padding: 1.4rem 1.2rem 0 0; border-top: 2px solid var(--deep-muted); display: grid; gap: 0.5rem; align-content: start; }
-.steps li::before { content: "Step " counter(s); font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--deep-muted); }
-.steps li:first-child { border-top-color: var(--accent); }
-.steps h3 { font-size: 1.25rem; }
-.steps p { color: var(--deep-muted); font-size: 0.97rem; }
-.on-deep .steps li:first-child { border-top-color: var(--accent); }
-@media (max-width: 900px) { .steps { grid-template-columns: 1fr; } .steps li { padding: 1.1rem 0 1.3rem; } }
-
-/* Lists */
-.ticks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.65rem; }
-.ticks li { display: grid; grid-template-columns: 1rem 1fr; gap: 0.75rem; line-height: 1.5; }
-.ticks li::before { content: ""; width: 0.55rem; height: 0.55rem; margin-top: 0.5rem; border: 1.5px solid var(--accent-text); transform: rotate(45deg); }
-.cols-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem 2.5rem; }
-@media (max-width: 700px) { .cols-2 { grid-template-columns: 1fr; } }
-
-/* About preview */
-.about-prev { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
-.about-prev img { width: 100%; border-radius: var(--r); aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 6%; }
-blockquote { margin: 0; font-family: var(--f-display); font-size: clamp(1.25rem, 2.3vw, 1.6rem); line-height: 1.45; }
-@media (max-width: 640px) { .about-prev { grid-template-columns: 1fr; } .about-prev img { max-width: 11rem; } }
-
-/* CTA band */
-.cta-band .wrap { display: grid; gap: 1.6rem; justify-items: start; }
-.cta-band h2 { max-width: 44rem; }
-
-/* Services detail */
-.ladder { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--rule); border-radius: var(--r); background: var(--panel); margin-bottom: 3.5rem; }
-.ladder a { padding: 1.2rem 1.4rem; text-decoration: none; display: grid; gap: 0.25rem; }
-.ladder a + a { border-left: 1px solid var(--rule); }
-.ladder a:hover { background: var(--tint); }
-.ladder b { font-family: var(--f-display); font-weight: 400; font-size: 1.25rem; }
-.ladder .arrow { color: var(--accent-text); }
-@media (max-width: 700px) { .ladder { grid-template-columns: 1fr; } .ladder a + a { border-left: 0; border-top: 1px solid var(--rule); } }
-.svc { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr); gap: clamp(2rem, 5vw, 4.5rem); padding-block: 3rem; border-top: 1px solid var(--rule); scroll-margin-top: 6rem; }
-.svc-side { display: grid; gap: 1.1rem; align-content: start; position: sticky; top: 6rem; }
-.svc-body { display: grid; gap: 2rem; min-width: 0; }
-.svc-body h4 { font-family: var(--f-mono); font-weight: 500; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.9rem; }
-.dl { display: grid; gap: 0; border-top: 1px solid var(--rule); }
-.dl div { display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 1fr); gap: 1rem; padding-block: 0.8rem; border-bottom: 1px solid var(--rule); }
-.dl dt { font-weight: 600; }
-.dl dd { margin: 0; color: var(--muted); }
-@media (max-width: 860px) { .svc { grid-template-columns: 1fr; } .svc-side { position: static; } }
-@media (max-width: 520px) { .dl div { grid-template-columns: 1fr; gap: 0.2rem; } }
-.months { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.months div { border-top: 2px solid var(--ink); padding-top: 0.8rem; display: grid; gap: 0.35rem; align-content: start; }
-.months div b { font-family: var(--f-display); font-weight: 400; font-size: 1.15rem; }
-.months p { color: var(--muted); font-size: 0.95rem; }
-@media (max-width: 700px) { .months { grid-template-columns: 1fr; } }
-.note { background: var(--tint); border-radius: var(--r); padding: 1rem 1.2rem; font-size: 0.97rem; }
-
-/* Law firm areas */
-.areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
-.areas div { border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 1.4rem; display: grid; gap: 0.5rem; align-content: start; background: var(--panel); }
-.areas h3 { font-size: 1.15rem; }
-.areas p { color: var(--muted); font-size: 0.96rem; }
-@media (max-width: 860px) { .areas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .areas { grid-template-columns: 1fr; } }
-
-/* Pricing table */
-.table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--r); background: var(--panel); }
-table { border-collapse: collapse; width: 100%; min-width: 46rem; font-size: 0.97rem; }
-th, td { text-align: left; vertical-align: top; padding: 1rem 1.1rem; border-bottom: 1px solid var(--rule); }
-thead th { font-family: var(--f-display); font-weight: 400; font-size: 1.15rem; vertical-align: bottom; }
-thead th .price { font-size: 1.5rem; margin-top: 0.4rem; }
-tbody th { font-family: var(--f-mono); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); width: 12rem; }
-tbody tr:last-child td, tbody tr:last-child th { border-bottom: 0; }
-td.yes { color: var(--ok); font-weight: 600; }
-.price-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 3rem; }
-@media (max-width: 900px) { .price-cards { grid-template-columns: 1fr; } }
-.price-cards .offer ul { margin: 0; }
-
-/* FAQ */
-.faq { display: grid; border-top: 1px solid var(--rule); }
-.faq details { border-bottom: 1px solid var(--rule); }
-.faq summary { cursor: pointer; padding: 1.15rem 2rem 1.15rem 0; font-family: var(--f-display); font-size: 1.2rem; list-style: none; position: relative; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; position: absolute; right: 0.2rem; top: 1rem; font-family: var(--f-body); color: var(--accent-text); font-size: 1.4rem; }
-.faq details[open] summary::after { content: "\2212"; }
-.faq details p { padding: 0 0 1.3rem; color: var(--muted); max-width: 44rem; }
-
-/* About page */
-.about-hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
-@media (max-width: 760px) { .about-hero { grid-template-columns: 1fr; } }
-.proof { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
-.proof div { border: 1px dashed var(--rule); border-radius: var(--r); padding: 1.1rem; display: grid; gap: 0.3rem; align-content: start; }
-.proof b { font-family: var(--f-display); font-weight: 400; font-size: 1.6rem; color: var(--muted); }
-@media (max-width: 860px) { .proof { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.pillars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
-.pillars div { display: grid; gap: 0.4rem; align-content: start; border-top: 1px solid var(--deep-muted); padding-top: 1rem; }
-.pillars b { font-family: var(--f-display); font-weight: 400; font-size: 1.2rem; }
-@media (max-width: 860px) { .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .pillars, .proof { grid-template-columns: 1fr; } }
-
-/* Insights */
-.articles { display: grid; border-top: 1px solid var(--rule); }
-.articles article { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr) auto; gap: 1.5rem; padding-block: 1.25rem; border-bottom: 1px solid var(--rule); align-items: baseline; }
-.articles h3 { font-size: 1.2rem; }
-.articles p { color: var(--muted); font-size: 0.95rem; margin-top: 0.3rem; }
-.tag { font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); border-radius: 2px; padding: 0.15rem 0.45rem; white-space: nowrap; }
-@media (max-width: 700px) { .articles article { grid-template-columns: 1fr; gap: 0.4rem; } }
-.magnet { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; align-items: center; background: var(--deep); color: var(--deep-fg); border-radius: var(--r); padding: clamp(1.5rem, 4vw, 2.75rem); margin-bottom: 3rem; }
-.magnet p { color: var(--deep-muted); }
-@media (max-width: 760px) { .magnet { grid-template-columns: 1fr; } }
-
-/* Contact */
-.contact-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
-@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
-form { background: var(--panel); border: 1px solid var(--rule); border-radius: var(--r); padding: clamp(1.25rem, 3vw, 2rem); display: grid; gap: 1.1rem; }
-.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
-@media (max-width: 560px) { .row2 { grid-template-columns: 1fr; } }
-.field { display: grid; gap: 0.35rem; min-width: 0; }
-.field label { font-weight: 600; font-size: 0.9rem; }
-.field label span { font-weight: 400; color: var(--muted); }
-input[type=text], input[type=email], input[type=tel], select, textarea { width: 100%; font: 400 1rem var(--f-body); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: var(--r); padding: 0.7rem 0.8rem; }
-textarea { min-height: 7rem; resize: vertical; }
-input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent-text); outline-offset: 0; border-color: transparent; }
-.radios { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.radios label { display: inline-flex; gap: 0.45rem; align-items: center; border: 1px solid var(--rule); border-radius: var(--r); padding: 0.5rem 0.8rem; font-weight: 400; font-size: 0.93rem; cursor: pointer; background: var(--paper); }
-.radios input { accent-color: var(--accent-text); }
-.form-msg { border-radius: var(--r); padding: 0.9rem 1rem; background: var(--tint); font-size: 0.95rem; }
-.form-msg.err { border-left: 3px solid var(--accent-text); }
-.next-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.2rem; counter-reset: n; }
-.next-steps li { counter-increment: n; display: grid; grid-template-columns: 2rem 1fr; gap: 0.8rem; }
-.next-steps li::before { content: counter(n); font-family: var(--f-display); font-size: 1.3rem; color: var(--accent-text); line-height: 1.3; }
-.next-steps b { display: block; }
-.next-steps span { color: var(--muted); font-size: 0.95rem; }
-.contact-card { border-top: 1px solid var(--rule); padding-top: 1.2rem; display: grid; gap: 0.4rem; font-size: 0.97rem; }
-.contact-card code { font-family: var(--f-mono); font-size: 0.9rem; user-select: all; }
-
-/* Footer */
-footer { background: var(--deep); color: var(--deep-fg); padding-block: 3.5rem 2rem; }
-.foot-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 1fr)); gap: 2rem; }
-footer .muted { color: var(--deep-muted); }
-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
-footer ul a { text-decoration: none; color: var(--deep-muted); }
-footer ul a:hover { color: var(--deep-fg); }
-.legal { margin-top: 2.5rem; padding-top: 1.3rem; border-top: 1px solid rgba(255,255,255,0.14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; font-size: 0.85rem; color: var(--deep-muted); }
-@media (max-width: 760px) { .foot-grid { grid-template-columns: 1fr; } }
-
-.page { display: block; }
-.stack { display: grid; gap: 1.5rem; }
-</style>
-
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="#home" data-nav>
+    <a class="brand" href="./">
       <img src="logo.jpg" alt="thefractionalCOO, home" width="2048" height="508">
     </a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Main">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#law-firms">Law Firm Operations</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#about">About</a>
-      <a href="#insights">Insights</a>
-      <a class="btn sm" href="#contact">Book a Fit Call</a>
+      <a href="./" aria-current="page">Home</a>
+      <a href="services">Services</a>
+      <a href="law-firms">Law Firm Operations</a>
+      <a href="pricing">Pricing</a>
+      <a href="about">About</a>
+      <a href="insights">Insights</a>
+      <a class="btn sm" href="contact">Book a Fit Call</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-
-<!-- ============ HOME ============ -->
-<div class="page" id="page-home" data-page="home">
   <section class="band hero">
     <div class="wrap">
       <div class="hero-copy">
@@ -345,8 +38,8 @@ footer ul a:hover { color: var(--deep-fg); }
         <h1>You built the firm. Now let's build the <em>operation</em> that can support it.</h1>
         <p class="lede">Fractional COO leadership for founder-led and partner-led law firms that need stronger people, processes, accountability and execution, without hiring a full-time COO.</p>
         <div class="actions">
-          <a class="btn" href="#contact">Book a Fit Call</a>
-          <a class="btn ghost" href="#services">Explore Services</a>
+          <a class="btn" href="contact">Book a Fit Call</a>
+          <a class="btn ghost" href="services">Explore Services</a>
         </div>
       </div>
       <figure class="portrait">
@@ -397,7 +90,7 @@ footer ul a:hover { color: var(--deep-fg); }
             <span class="label">Recommended next step</span>
             <b id="resTitle"></b>
             <p id="resText"></p>
-            <a class="btn" href="#contact" id="resBtn">Book a Fit Call</a>
+            <a class="btn" href="contact" id="resBtn">Book a Fit Call</a>
             <span class="small muted">The items you checked will be added to your request.</span>
           </div>
         </div>
@@ -429,19 +122,19 @@ footer ul a:hover { color: var(--deep-fg); }
           <div class="stage"><span class="label">Diagnose</span><span class="label">One-time</span></div>
           <h3>Operational Health Assessment</h3>
           <p>Find out what is holding the firm back and leave with a prioritized 90-day operating roadmap.</p>
-          <div class="stack" style="gap:.8rem"><div class="price"><small>Starting at</small>$3,500</div><a class="link" href="#svc-assessment">See what's included &rarr;</a></div>
+          <div class="stack" style="gap:.8rem"><div class="price"><small>Starting at</small>$3,500</div><a class="link" href="services#svc-assessment">See what's included &rarr;</a></div>
         </article>
         <article class="offer">
           <div class="stage"><span class="label">Fix</span><span class="label">90 days</span></div>
           <h3>90-Day Operating Reset</h3>
           <p>Turn the roadmap into action. We focus on the highest-impact operational priorities and build systems your team can sustain.</p>
-          <div class="stack" style="gap:.8rem"><div class="price"><small>Starting at</small>$15,000</div><a class="link" href="#svc-reset">See what's included &rarr;</a></div>
+          <div class="stack" style="gap:.8rem"><div class="price"><small>Starting at</small>$15,000</div><a class="link" href="services#svc-reset">See what's included &rarr;</a></div>
         </article>
         <article class="offer featured">
           <div class="stage"><span class="label">Operate</span><span class="label">Ongoing</span></div>
           <h3>Fractional COO Partnership</h3>
           <p>Executive operational leadership without the cost of a full-time COO. I work alongside ownership to create accountability, improve execution and build the firm for its next stage of growth.</p>
-          <div class="stack" style="gap:.8rem"><div class="price"><small>Starting at</small>$7,500/month</div><a class="link" href="#svc-partnership">See what's included &rarr;</a></div>
+          <div class="stack" style="gap:.8rem"><div class="price"><small>Starting at</small>$7,500/month</div><a class="link" href="services#svc-partnership">See what's included &rarr;</a></div>
         </article>
       </div>
     </div>
@@ -470,7 +163,7 @@ footer ul a:hover { color: var(--deep-fg); }
         <p class="label">About Victoria</p>
         <blockquote>"I'm not a business coach standing outside the operation telling you what to do. I'm an operator."</blockquote>
         <p class="muted" style="max-width:40rem">My work has centered on building teams, systems, accountability, technology, financial visibility and leadership structures inside growing organizations, including complex, multi-location law firms. I understand what it feels like when a firm has outgrown the way it used to operate, and what it takes to build the next version.</p>
-        <div><a class="btn ghost" href="#about">Meet Victoria</a></div>
+        <div><a class="btn ghost" href="about">Meet Victoria</a></div>
       </div>
     </div>
   </section>
@@ -479,450 +172,28 @@ footer ul a:hover { color: var(--deep-fg); }
     <div class="wrap">
       <p class="label">Next step</p>
       <h2>Your firm does not need more ideas sitting on a list. It needs the operating structure to execute them.</h2>
-      <div class="actions"><a class="btn" href="#contact">Book a Fit Call</a><a class="btn ghost" href="#contact">Request an Operational Assessment</a></div>
+      <div class="actions"><a class="btn" href="contact">Book a Fit Call</a><a class="btn ghost" href="contact">Request an Operational Assessment</a></div>
     </div>
   </section>
-</div>
-
-<!-- ============ SERVICES ============ -->
-<div class="page" id="page-services" data-page="services" hidden>
-  <section class="band">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">Services</p>
-        <h1>Operational leadership built around what your firm actually needs.</h1>
-        <p class="lede">Some firms need clarity. Some need a focused operational reset. Others need an experienced COO embedded alongside leadership. You get the right level of support without being forced into an engagement that doesn't fit.</p>
-      </div>
-
-      <nav class="ladder" aria-label="Services">
-        <a href="#svc-assessment"><span class="label">Diagnose</span><b>Operational Health Assessment</b><span class="muted">From $3,500 <span class="arrow">&darr;</span></span></a>
-        <a href="#svc-reset"><span class="label">Fix</span><b>90-Day Operating Reset</b><span class="muted">From $15,000 <span class="arrow">&darr;</span></span></a>
-        <a href="#svc-partnership"><span class="label">Operate</span><b>Fractional COO Partnership</b><span class="muted">From $7,500/month <span class="arrow">&darr;</span></span></a>
-      </nav>
-
-      <article class="svc" id="svc-assessment">
-        <div class="svc-side">
-          <p class="label">Diagnose &middot; one-time engagement</p>
-          <h2>Operational Health Assessment</h2>
-          <div class="price"><small>Starting at</small>$3,500</div>
-          <p class="muted">For the owner who knows something is wrong and wants a structured way to understand what is holding the firm back before committing to a larger engagement.</p>
-          <div><a class="btn" href="#contact" data-service="assessment">Request an Assessment</a></div>
-        </div>
-        <div class="svc-body">
-          <div>
-            <h4>What I evaluate</h4>
-            <dl class="dl">
-              <div><dt>People</dt><dd>Leadership structure, accountability, roles, capacity and management.</dd></div>
-              <div><dt>Process</dt><dd>SOPs, intake and case workflows, handoffs, bottlenecks and rework.</dd></div>
-              <div><dt>Performance</dt><dd>KPIs, dashboards, reporting and goals.</dd></div>
-              <div><dt>Technology</dt><dd>Practice-management and other systems, duplication, automation opportunities and adoption.</dd></div>
-              <div><dt>Financial operations</dt><dd>Reporting cadence, profitability visibility, budgeting and controls.</dd></div>
-              <div><dt>Client experience</dt><dd>Communication, handoffs, service breakdowns and complaints.</dd></div>
-              <div><dt>Leadership</dt><dd>Meeting structure, decision-making, communication and accountability.</dd></div>
-            </dl>
-          </div>
-          <div>
-            <h4>What you receive: Operational Assessment &amp; 90-Day Roadmap</h4>
-            <ul class="ticks cols-2">
-              <li>What is working and should be protected</li>
-              <li>What is not working, and why</li>
-              <li>Operational risks and bottlenecks</li>
-              <li>Areas costing the firm time, money or capacity</li>
-              <li>Your top five operational priorities</li>
-              <li>Recommended KPIs and accountability measures</li>
-              <li>Recommended organizational or role changes, when appropriate</li>
-              <li>A 30/60/90-day action plan</li>
-              <li>A 90-minute executive presentation and prioritization session</li>
-            </ul>
-          </div>
-          <p class="note">You can implement the roadmap internally, or I can stay involved and help your team execute it.</p>
-        </div>
-      </article>
-
-      <article class="svc" id="svc-reset">
-        <div class="svc-side">
-          <p class="label">Fix &middot; 90-day engagement</p>
-          <h2>90-Day Operating Reset</h2>
-          <div class="price"><small>Starting at</small>$15,000</div>
-          <p class="muted">A defined implementation engagement for a firm that needs operational change but isn't ready for an open-ended Fractional COO relationship.</p>
-          <div><a class="btn" href="#contact" data-service="reset">Discuss a Reset</a></div>
-        </div>
-        <div class="svc-body">
-          <div>
-            <h4>How the 90 days are structured</h4>
-            <div class="months">
-              <div><span class="label">Month 1</span><b>Diagnose &amp; Design</b><p>Confirm priorities, establish measures, identify bottlenecks and build the implementation plan.</p></div>
-              <div><span class="label">Month 2</span><b>Implement</b><p>Deploy agreed processes, dashboards, meeting rhythms, accountability systems and operating structure.</p></div>
-              <div><span class="label">Month 3</span><b>Stabilize</b><p>Coach leaders, measure adoption, correct gaps, document the system and hand ownership to your internal team.</p></div>
-            </div>
-          </div>
-          <p class="note"><b>Focused by design.</b> Each Reset covers roughly three to five agreed operational priorities, so the work gets finished and sticks.</p>
-        </div>
-      </article>
-
-      <article class="svc" id="svc-partnership">
-        <div class="svc-side">
-          <p class="label">Operate &middot; ongoing partnership</p>
-          <h2>Fractional COO Partnership</h2>
-          <div class="price"><small>Starting at</small>$7,500/month</div>
-          <p class="muted">Executive operational leadership embedded alongside ownership. Three-month minimum. Scoped around responsibilities and outcomes, not a block of hours.</p>
-          <div><a class="btn" href="#contact" data-service="partnership">Book a Fit Call</a></div>
-        </div>
-        <div class="svc-body">
-          <div>
-            <h4>Typical scope</h4>
-            <ul class="ticks cols-2">
-              <li>Translate the owner's vision into executable priorities</li>
-              <li>Create leadership accountability and role clarity</li>
-              <li>Build and monitor KPIs and dashboards</li>
-              <li>Improve or facilitate leadership meetings</li>
-              <li>Identify and remove operational bottlenecks</li>
-              <li>Improve organizational structure</li>
-              <li>Develop and implement core processes and SOPs</li>
-              <li>Strengthen communication and accountability systems</li>
-              <li>Evaluate technology, workflows and adoption</li>
-              <li>Lead major operational initiatives</li>
-              <li>Coach managers and develop leaders</li>
-              <li>Support hiring and workforce planning</li>
-              <li>Review financial and operational performance</li>
-              <li>Build quarterly and annual operating plans</li>
-              <li>Keep major initiatives moving to completion</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-  <section class="band on-deep cta-band">
-    <div class="wrap">
-      <h2>Not sure which engagement fits? That's what the Fit Call is for.</h2>
-      <p class="lede">A 15 to 30 minute conversation. I'll recommend one option, or tell you if I'm not the right fit.</p>
-      <div class="actions"><a class="btn" href="#contact">Book a Fit Call</a><a class="btn ghost" href="#pricing">Compare pricing</a></div>
-    </div>
-  </section>
-</div>
-
-<!-- ============ LAW FIRMS ============ -->
-<div class="page" id="page-law-firms" data-page="law-firms" hidden>
-  <section class="band">
-    <div class="wrap split">
-      <div class="stack">
-        <p class="label">Law firm operations</p>
-        <h1>Your law firm may have outgrown the way it operates.</h1>
-      </div>
-      <div class="prose" style="align-self:end">
-        <p class="lede">As firms grow, the owner can no longer personally solve every people, process, intake, technology, financial and client-experience issue.</p>
-        <p>I help growing law firms build the operational structure and leadership accountability they need to scale. I have led operational work inside complex, multi-location firm environments, so I know how a firm actually runs between the consult and the closed file.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">Sound familiar?</p>
-        <h2>What I hear from managing partners</h2>
-      </div>
-      <ul class="ticks cols-2" style="max-width:62rem">
-        <li>The managing partner is still the operational bottleneck.</li>
-        <li>Intake, case management and administrative teams operate in silos.</li>
-        <li>Managers have titles but inconsistent management systems.</li>
-        <li>KPIs exist but aren't consistently used to drive decisions.</li>
-        <li>SOPs exist but adoption is inconsistent.</li>
-        <li>Client communication varies by team or employee.</li>
-        <li>Technology is underused or creates duplicate work.</li>
-        <li>Growth has added headcount without enough structure.</li>
-        <li>Leadership spends too much time reacting and not enough time operating strategically.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">Where I work inside the firm</p>
-        <h2>The business side of the practice</h2>
-      </div>
-      <div class="areas">
-        <div><span class="label">Intake</span><h3>Lead to signed client</h3><p>Response times, qualification, handoff to the case team, and conversion you can actually measure.</p></div>
-        <div><span class="label">Case operations</span><h3>Workflow and handoffs</h3><p>Consistent processes across paralegals and teams so outcomes don't depend on who touched the file.</p></div>
-        <div><span class="label">People</span><h3>Managers who manage</h3><p>Role clarity, accountability rhythms and coaching for strong employees stepping into leadership.</p></div>
-        <div><span class="label">Performance</span><h3>KPIs and dashboards</h3><p>A short set of numbers the partners trust, reviewed on a cadence that drives decisions.</p></div>
-        <div><span class="label">Technology</span><h3>Systems that get used</h3><p>Practice-management adoption, fewer duplicate entries and automation where it saves real time.</p></div>
-        <div><span class="label">Finance &amp; client experience</span><h3>Visibility and consistency</h3><p>Profitability visibility, reporting cadence, and a client experience that holds up as you grow.</p></div>
-      </div>
-      <p class="muted" style="margin-top:1.5rem; font-size:.92rem">Best Fractional COO provides operational leadership. It does not provide legal advice or practice law, and it does not replace your accountant or legal counsel.</p>
-    </div>
-  </section>
-
-  <section class="band on-deep cta-band">
-    <div class="wrap">
-      <h2>You know how to practice law. I help build the operation that lets the firm perform at its best.</h2>
-      <div class="actions"><a class="btn" href="#contact">Book a Law Firm Operations Call</a></div>
-    </div>
-  </section>
-</div>
-
-<!-- ============ PRICING ============ -->
-<div class="page" id="page-pricing" data-page="pricing" hidden>
-  <section class="band">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">Pricing</p>
-        <h1>Clear starting points. Final scope set in writing.</h1>
-        <p class="lede">Engagements are priced around the level of responsibility and execution involved, not meeting time. After a Fit Call you receive a short written proposal with exact scope, success measures and investment within one to two business days.</p>
-      </div>
-
-      <div class="price-cards">
-        <article class="offer">
-          <div class="stage"><span class="label">Diagnose</span><span class="label">One-time</span></div>
-          <h3>Operational Health Assessment</h3>
-          <div class="price"><small>Starting at</small>$3,500</div>
-          <ul class="ticks">
-            <li>Seven-area operational review</li>
-            <li>Written assessment and 90-day roadmap</li>
-            <li>Top five priorities and recommended KPIs</li>
-            <li>90-minute executive presentation</li>
-          </ul>
-          <a class="btn ghost" href="#contact" data-service="assessment">Request an Assessment</a>
-        </article>
-        <article class="offer">
-          <div class="stage"><span class="label">Fix</span><span class="label">90 days</span></div>
-          <h3>90-Day Operating Reset</h3>
-          <div class="price"><small>Starting at</small>$15,000</div>
-          <ul class="ticks">
-            <li>Three to five agreed priorities</li>
-            <li>Design, implement and stabilize</li>
-            <li>Dashboards, meeting rhythms and SOPs deployed</li>
-            <li>Ownership transferred to your team</li>
-          </ul>
-          <a class="btn ghost" href="#contact" data-service="reset">Discuss a Reset</a>
-        </article>
-        <article class="offer featured">
-          <div class="stage"><span class="label">Operate</span><span class="label">3-month minimum</span></div>
-          <h3>Fractional COO Partnership</h3>
-          <div class="price"><small>Starting at</small>$7,500/month</div>
-          <ul class="ticks">
-            <li>Embedded executive operational leadership</li>
-            <li>Leadership meetings, KPIs and accountability</li>
-            <li>Lead major operational initiatives</li>
-            <li>Quarterly and annual operating plans</li>
-          </ul>
-          <a class="btn" href="#contact" data-service="partnership">Book a Fit Call</a>
-        </article>
-      </div>
-
-      <div class="sec-head" style="margin-bottom:1.25rem"><h2>Side by side</h2></div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr><th></th><th>Assessment</th><th>Operating Reset</th><th>Fractional COO</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Investment</th><td>From $3,500</td><td>From $15,000</td><td>From $7,500/month</td></tr>
-            <tr><th scope="row">Term</th><td>One-time</td><td>90 days</td><td>Ongoing, 3-month minimum</td></tr>
-            <tr><th scope="row">Best for</th><td>Owners who know something is wrong and want clarity first</td><td>Firms that know the issues and need them fixed</td><td>Firms with an ongoing need for executive operational leadership</td></tr>
-            <tr><th scope="row">Diagnosis &amp; roadmap</th><td class="yes">Included</td><td class="yes">Included</td><td class="yes">Included</td></tr>
-            <tr><th scope="row">Hands-on implementation</th><td>Optional next step</td><td class="yes">3&ndash;5 priorities</td><td class="yes">Ongoing</td></tr>
-            <tr><th scope="row">KPIs &amp; dashboards</th><td>Recommended</td><td class="yes">Built and deployed</td><td class="yes">Built and monitored</td></tr>
-            <tr><th scope="row">Leadership coaching</th><td>&mdash;</td><td class="yes">During Month 3</td><td class="yes">Ongoing</td></tr>
-            <tr><th scope="row">Operating plans</th><td>30/60/90-day plan</td><td>90-day plan</td><td class="yes">Quarterly and annual</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="muted" style="margin-top:1rem; font-size:.95rem">Need a trusted operator to think with, but not embedded leadership? Ask about Executive COO Advisory on your Fit Call.</p>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap split">
-      <div class="stack">
-        <p class="label">Common questions</p>
-        <h2>Before you book</h2>
-      </div>
-      <div class="faq">
-        <details><summary>How many hours do I get?</summary><p>Fractional COO engagements aren't structured as a block of consulting hours. We agree on the responsibilities, cadence, priorities and outcomes I'm accountable for. If you mainly need hourly task support, I'm probably not the right solution.</p></details>
-        <details><summary>Why not just hire a full-time COO?</summary><p>If your firm truly needs a full-time executive and is ready for that investment, you should. A fractional model makes sense when you need COO-level leadership but not 40 hours a week, or when you want to build the operating structure before making a permanent executive hire.</p></details>
-        <details><summary>Can we start smaller?</summary><p>Yes. Most firms start with the Operational Health Assessment. If ongoing executive guidance is the better fit, we can talk about an advisory arrangement. I'd rather reduce the scope than water down the work.</p></details>
-        <details><summary>Can you guarantee results?</summary><p>I'm very clear about the work, the operating measures and what I will own. I can't responsibly guarantee a specific financial result, because execution also depends on the firm, its people and the decisions leadership makes.</p></details>
-        <details><summary>Do you work with firms outside a specific practice area?</summary><p>Yes. The operational challenges of growth look similar across practice areas: intake, case workflow, management, reporting and client experience.</p></details>
-        <details><summary>Do you provide legal, tax or accounting advice?</summary><p>No. My work is operational leadership. Legal, tax, accounting and specialized technical work stay with your existing advisors unless separately agreed.</p></details>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ============ ABOUT ============ -->
-<div class="page" id="page-about" data-page="about" hidden>
-  <section class="band">
-    <div class="wrap about-hero">
-      <div class="stack">
-        <p class="label">About</p>
-        <h1>Growing firms rarely suffer from a lack of ideas. They struggle to execute the ones they already have.</h1>
-        <div class="prose">
-          <p>My career has been built inside operations: helping organizations turn growth, complexity and competing priorities into clear systems, accountable leadership and measurable execution.</p>
-          <p>I work across the parts of a business that have to function together: people, finance, technology, processes, leadership, client experience and performance. I have led operational work in complex, multi-location law-firm environments and understand what happens when a firm grows faster than its operating structure.</p>
-          <p>Best Fractional COO was created for owners who need experienced operational leadership but don't necessarily need a full-time COO. I step in, understand the firm, identify what's getting in the way, and work alongside leadership to build and execute the solution.</p>
-        </div>
-        <div class="actions"><a class="btn" href="#contact">Book a Fit Call</a></div>
-      </div>
-      <figure class="portrait" style="justify-self:start">
-        <img src="victoria.jpg" alt="Victoria, founder of Best Fractional COO">
-        <figcaption><b>Victoria</b><span class="muted">Founder &amp; Fractional COO</span></figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="band on-deep">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">How I work</p>
-        <h2>An operator at the table, not a coach on the sidelines.</h2>
-      </div>
-      <div class="pillars">
-        <div><b>Executive-level leadership</b><p class="muted">Operational leadership, not generic business coaching.</p></div>
-        <div><b>Hands-on implementation</b><p class="muted">Not a report that gets put on a shelf.</p></div>
-        <div><b>Focus on execution</b><p class="muted">Priorities, accountability, KPIs, leadership rhythms, processes and systems.</p></div>
-        <div><b>Stays to make it work</b><p class="muted">Diagnose the problem, build the solution, stay long enough for it to stick.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">Experience</p>
-        <h2>Track record</h2>
-        <p class="muted">Placeholders for the mockup. Each block will be filled with a verified figure before launch.</p>
-      </div>
-      <div class="proof">
-        <div><b>[##] years</b><span class="muted">Executive and operations leadership</span></div>
-        <div><b>[#] locations</b><span class="muted">Multi-location leadership experience</span></div>
-        <div><b>[###] people</b><span class="muted">Size of teams and organizations supported</span></div>
-        <div><b>[Result]</b><span class="muted">Measurable operational improvement</span></div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ============ INSIGHTS ============ -->
-<div class="page" id="page-insights" data-page="insights" hidden>
-  <section class="band">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">Insights</p>
-        <h1>Notes on running the business side of a law firm</h1>
-      </div>
-
-      <div class="magnet">
-        <div class="stack" style="gap:.9rem">
-          <p class="label" style="color:var(--deep-muted)">Free scorecard</p>
-          <h2>The Founder Bottleneck Scorecard</h2>
-          <p>A short self-assessment for owners: how dependent is your firm on you, and where are the leadership, process, KPI and execution gaps?</p>
-        </div>
-        <div class="actions"><a class="btn" href="#readiness" data-goto="home">Take the quick version</a></div>
-      </div>
-
-      <div class="articles">
-        <article><span class="tag">Leadership</span><div><h3>The Founder Bottleneck: When Everything Still Runs Through You</h3><p>Why the managing partner becomes the constraint, and how to hand off real decisions.</p></div><span class="tag">Coming soon</span></article>
-        <article><span class="tag">COO basics</span><div><h3>When Does a Growing Law Firm Need a COO?</h3><p>The signals that the firm has outgrown partner-led operations.</p></div><span class="tag">Coming soon</span></article>
-        <article><span class="tag">COO basics</span><div><h3>Fractional COO vs. Full-Time COO: Which One Do You Need?</h3><p>Cost, commitment and timing compared honestly.</p></div><span class="tag">Coming soon</span></article>
-        <article><span class="tag">Pricing</span><div><h3>How Much Does a Fractional COO Cost?</h3><p>What drives the investment, and what you should expect for it.</p></div><span class="tag">Coming soon</span></article>
-        <article><span class="tag">Performance</span><div><h3>The KPIs a Law Firm Leadership Team Should Actually Use</h3><p>A short list of numbers worth a weekly look.</p></div><span class="tag">Coming soon</span></article>
-        <article><span class="tag">Process</span><div><h3>Why SOPs Don't Fix Broken Processes</h3><p>Documentation is the last step, not the first.</p></div><span class="tag">Coming soon</span></article>
-        <article><span class="tag">Leadership</span><div><h3>Why Your Leadership Meetings Aren't Creating Execution</h3><p>Meeting rhythms that end in owners, deadlines and follow-through.</p></div><span class="tag">Coming soon</span></article>
-        <article><span class="tag">People</span><div><h3>When Your Managers Are Great Employees but Not Yet Great Managers</h3><p>Developing the people you promoted.</p></div><span class="tag">Coming soon</span></article>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ============ CONTACT ============ -->
-<div class="page" id="page-contact" data-page="contact" hidden>
-  <section class="band">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="label">Book a Fit Call</p>
-        <h1>Let's talk about where your firm is today.</h1>
-        <p class="lede">A 15 to 30 minute conversation to understand your firm, what isn't working and whether there's a real operational need. No pitch deck.</p>
-      </div>
-      <div class="contact-grid">
-        <form id="fitForm" novalidate>
-          <div id="fromCheck" class="form-msg" hidden></div>
-          <div class="row2">
-            <div class="field"><label for="f-name">Your name</label><input type="text" id="f-name" autocomplete="name" required></div>
-            <div class="field"><label for="f-firm">Firm name</label><input type="text" id="f-firm" autocomplete="organization" required></div>
-          </div>
-          <div class="row2">
-            <div class="field"><label for="f-email">Email</label><input type="email" id="f-email" autocomplete="email" required></div>
-            <div class="field"><label for="f-phone">Phone <span>(optional)</span></label><input type="tel" id="f-phone" autocomplete="tel"></div>
-          </div>
-          <div class="row2">
-            <div class="field"><label for="f-role">Your role</label>
-              <select id="f-role"><option>Founding / owner attorney</option><option>Managing partner</option><option>Partner</option><option>Firm administrator / director of operations</option><option>Other</option></select>
-            </div>
-            <div class="field"><label for="f-size">Firm size (attorneys + staff)</label>
-              <select id="f-size"><option>Under 10</option><option selected>10&ndash;25</option><option>26&ndash;50</option><option>51&ndash;75</option><option>75+</option></select>
-            </div>
-          </div>
-          <div class="row2">
-            <div class="field"><label for="f-rev">Annual revenue</label>
-              <select id="f-rev"><option>Under $2M</option><option selected>$2M&ndash;$5M</option><option>$5M&ndash;$10M</option><option>$10M&ndash;$20M</option><option>$20M+</option><option>Prefer not to say</option></select>
-            </div>
-            <div class="field"><label for="f-practice">Primary practice area <span>(optional)</span></label><input type="text" id="f-practice" placeholder="e.g. personal injury, family, estate planning"></div>
-          </div>
-          <div class="field">
-            <span style="font-weight:600;font-size:.9rem">I'm most interested in</span>
-            <div class="radios" role="radiogroup" aria-label="Service of interest">
-              <label><input type="radio" name="svc" id="svc-r1" value="assessment"> Assessment</label>
-              <label><input type="radio" name="svc" id="svc-r2" value="reset"> 90-Day Reset</label>
-              <label><input type="radio" name="svc" id="svc-r3" value="partnership"> Fractional COO</label>
-              <label><input type="radio" name="svc" id="svc-r4" value="unsure" checked> Not sure yet</label>
-            </div>
-          </div>
-          <div class="field"><label for="f-msg">What's happening right now that made you reach out?</label><textarea id="f-msg" placeholder="A few sentences is plenty."></textarea></div>
-          <div id="formMsg" class="form-msg" hidden></div>
-          <div><button class="btn" type="submit">Request a Fit Call</button></div>
-        </form>
-
-        <aside class="stack">
-          <h3>What happens next</h3>
-          <ol class="next-steps">
-            <li><div><b>Fit Call</b><span>15&ndash;30 minutes on your firm, your team and what's not working.</span></div></li>
-            <li><div><b>One recommendation</b><span>I'll suggest the engagement that fits, or tell you honestly if I'm not the right solution.</span></div></li>
-            <li><div><b>Written proposal</b><span>Scope, success measures and investment, within 1&ndash;2 business days.</span></div></li>
-            <li><div><b>Kickoff</b><span>Agree on the scope, sign, and set a start date.</span></div></li>
-          </ol>
-          <div class="contact-card">
-            <span class="label">Prefer email?</span>
-            <code>hello@bestfractionalcoo.com</code>
-            <span class="muted" style="font-size:.88rem">Placeholder address for the mockup.</span>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-</div>
-
 </main>
 
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div class="stack" style="gap:1rem">
-        <a class="brand" href="#home"><img src="logo.jpg" alt="thefractionalCOO" width="2048" height="508"></a>
+        <a class="brand" href="./"><img src="logo.jpg" alt="thefractionalCOO" width="2048" height="508"></a>
         <p class="muted" style="max-width:26rem">Helping growing law firms build the people, processes, accountability and operating systems they need to scale, without hiring a full-time COO.</p>
       </div>
       <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#law-firms">Law Firm Operations</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#insights">Insights</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="law-firms">Law Firm Operations</a></li>
+        <li><a href="pricing">Pricing</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="insights">Insights</a></li>
       </ul>
       <ul>
-        <li><a href="#contact">Book a Fit Call</a></li>
-        <li><a href="#contact">Request an Assessment</a></li>
+        <li><a href="contact">Book a Fit Call</a></li>
+        <li><a href="contact">Request an Assessment</a></li>
         <li><span class="muted">bestfractionalcoo.com</span></li>
       </ul>
     </div>
@@ -933,108 +204,6 @@ footer ul a:hover { color: var(--deep-fg); }
   </div>
 </footer>
 
-<script>
-(function () {
-  var pages = ["home", "services", "law-firms", "pricing", "about", "insights", "contact"];
-  var sectionToPage = { "svc-assessment": "services", "svc-reset": "services", "svc-partnership": "services", "readiness": "home" };
-  var nav = document.getElementById("nav");
-  var menuBtn = document.getElementById("menuBtn");
-
-  function route() {
-    var h = (location.hash || "#home").slice(1);
-    var page = pages.indexOf(h) >= 0 ? h : (sectionToPage[h] || "home");
-    document.querySelectorAll("[data-page]").forEach(function (el) { el.hidden = el.getAttribute("data-page") !== page; });
-    document.querySelectorAll("#nav a").forEach(function (a) {
-      if (a.getAttribute("href") === "#" + page) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
-    });
-    nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false");
-    if (pages.indexOf(h) >= 0) { window.scrollTo(0, 0); }
-    else { var t = document.getElementById(h); if (t) setTimeout(function () { t.scrollIntoView(); }, 0); }
-  }
-  window.addEventListener("hashchange", route);
-  route();
-
-  menuBtn.addEventListener("click", function () {
-    var open = nav.classList.toggle("open");
-    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-
-  // Pre-select the service on the contact form when a service button is clicked
-  document.querySelectorAll("[data-service]").forEach(function (a) {
-    a.addEventListener("click", function () {
-      var r = document.querySelector('input[name="svc"][value="' + a.getAttribute("data-service") + '"]');
-      if (r) r.checked = true;
-    });
-  });
-
-  // Readiness checklist
-  var boxes = document.querySelectorAll("#checkList input");
-  var tiers = [
-    { max: 2, svc: "assessment", btn: "Request an Assessment",
-      title: "A few friction points worth a closer look",
-      text: "These are often symptoms of something larger. An Operational Health Assessment pinpoints what is behind them and gives you a prioritized 90-day roadmap." },
-    { max: 5, svc: "reset", btn: "Book a Fit Call",
-      title: "Your firm is outgrowing its operation",
-      text: "A focused 90-Day Operating Reset is often the right fit at this stage. A short Fit Call will tell us which three to five priorities matter most." },
-    { max: 9, svc: "partnership", btn: "Book a Fit Call",
-      title: "The operation is holding the firm back",
-      text: "This is the work a Fractional COO does: owning the operating priorities alongside you until they stick. Start with a Fit Call." }
-  ];
-  var current = null;
-  function checkedItems() {
-    var out = [];
-    boxes.forEach(function (b) { if (b.checked) out.push(b.parentNode.textContent.trim()); });
-    return out;
-  }
-  function score() {
-    var n = checkedItems().length;
-    document.getElementById("meterBar").style.width = (n / boxes.length * 100) + "%";
-    document.getElementById("scoreText").textContent = n + " of " + boxes.length + " checked";
-    document.getElementById("readyMsg").hidden = n > 0;
-    document.getElementById("readyResult").hidden = n === 0;
-    if (n === 0) { current = null; return; }
-    current = tiers.filter(function (t) { return n <= t.max; })[0];
-    document.getElementById("resTitle").textContent = current.title;
-    document.getElementById("resText").textContent = current.text;
-    document.getElementById("resBtn").textContent = current.btn;
-  }
-  boxes.forEach(function (b) { b.addEventListener("change", score); });
-  score();
-
-  // Carry the checklist answers into the contact form
-  var autoText = "";
-  document.getElementById("resBtn").addEventListener("click", function () {
-    if (!current) return;
-    var items = checkedItems();
-    var r = document.querySelector('input[name="svc"][value="' + current.svc + '"]');
-    if (r) r.checked = true;
-    var ta = document.getElementById("f-msg");
-    var text = "From the readiness check, these describe our firm today:\n- " + items.join("\n- ") + "\n\n";
-    if (!ta.value.trim() || ta.value === autoText) { ta.value = text; autoText = text; }
-    var note = document.getElementById("fromCheck");
-    note.textContent = "You checked " + items.length + " of " + boxes.length + " signs on the readiness check. They're included in your message below, so the Fit Call can start where it matters.";
-    note.hidden = false;
-  });
-
-  // Contact form (mockup: no real submission)
-  document.getElementById("fitForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    var msg = document.getElementById("formMsg");
-    var missing = [];
-    if (!document.getElementById("f-name").value.trim()) missing.push("your name");
-    if (!document.getElementById("f-firm").value.trim()) missing.push("firm name");
-    var em = document.getElementById("f-email").value.trim();
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) missing.push("a valid email");
-    msg.hidden = false;
-    if (missing.length) {
-      msg.className = "form-msg err";
-      msg.textContent = "Please add " + missing.join(", ") + " so I can follow up.";
-      return;
-    }
-    msg.className = "form-msg";
-    msg.textContent = "Mockup only: on the live site this request would be sent to Victoria, with a link to choose a call time.";
-  });
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
