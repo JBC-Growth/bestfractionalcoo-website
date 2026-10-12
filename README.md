@@ -50,4 +50,4 @@ The `from` address must be on the domain verified in Resend.
 
 - Confirm business name ("Best Fractional COO" vs. logo's "thefractionalCOO")
 - Phone number and booking link, if she wants them on the site
-- Verified track-record figures and testimonials for the About page
+- Client testimonials for the About page

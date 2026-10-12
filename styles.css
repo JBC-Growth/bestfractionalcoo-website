@@ -244,8 +244,16 @@ td.yes { color: var(--ok); font-weight: 600; }
 .about-hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
 @media (max-width: 760px) { .about-hero { grid-template-columns: 1fr; } }
 .proof { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
-.proof div { border: 1px dashed var(--rule); border-radius: var(--r); padding: 1.1rem; display: grid; gap: 0.3rem; align-content: start; }
-.proof b { font-family: var(--f-display); font-weight: 400; font-size: 1.6rem; color: var(--muted); }
+.proof div { background: var(--panel); border: 1px solid var(--rule); border-top: 3px solid var(--accent); border-radius: var(--r); padding: 1.3rem 1.2rem; display: grid; gap: 0.35rem; align-content: start; }
+.proof b { font-family: var(--f-display); font-weight: 400; font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.proof-label { font-family: var(--f-mono); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.record { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 3.5rem; margin-top: 3rem; }
+.record-group { display: grid; gap: 1rem; align-content: start; min-width: 0; }
+.record-group h3 { font-size: 1.25rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule); }
+@media (max-width: 760px) { .record { grid-template-columns: 1fr; } }
+.creds { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.95rem; }
+.creds span { display: inline-flex; gap: 0.4rem; align-items: baseline; }
+.creds b { font-family: var(--f-display); font-weight: 400; font-size: 1.2rem; color: var(--accent-text); }
 @media (max-width: 860px) { .proof { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .pillars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
 .pillars div { display: grid; gap: 0.4rem; align-content: start; border-top: 1px solid var(--deep-muted); padding-top: 1rem; }
