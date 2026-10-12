@@ -239,6 +239,12 @@ thead th .price { font-size: 1.5rem; margin-top: 0.4rem; }
 tbody th { font-family: var(--f-mono); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); width: 12rem; }
 tbody tr:last-child td, tbody tr:last-child th { border-bottom: 0; }
 td.yes { color: var(--ok); font-weight: 600; }
+.on-blue .table-wrap { color: var(--ink); border-color: transparent; box-shadow: 0 10px 30px rgba(14, 17, 20, 0.12); }
+.on-blue .sec-head .label { color: var(--on-blue-fg); opacity: 0.75; }
+thead th { background: var(--deep); color: var(--deep-fg); border-bottom: 0; }
+thead th .price { color: var(--accent); }
+tbody tr:nth-child(even) th, tbody tr:nth-child(even) td { background: var(--tint); }
+.table-note { margin-top: 1.25rem; font-size: 0.97rem; max-width: 44rem; }
 .price-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 3rem; }
 @media (max-width: 900px) { .price-cards { grid-template-columns: 1fr; } }
 .price-cards .offer ul { margin: 0; }
