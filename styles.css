@@ -97,7 +97,7 @@ section.band.on-blue + section.band, section.band + section.band.on-blue { borde
 .hero-copy { display: grid; gap: 1.5rem; min-width: 0; }
 .hero h1 em { font-style: italic; color: var(--accent-text); }
 .portrait { margin: 0 14px 0 0; display: grid; gap: 1.4rem; justify-self: end; width: 100%; max-width: 21rem; }
-.portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 8%; border-radius: var(--r); display: block; box-shadow: 14px 14px 0 var(--brand-blue); }
+.portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; height: auto; border-radius: var(--r); display: block; box-shadow: 14px 14px 0 var(--brand-blue); }
 .portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 0.6rem; }
 .portrait figcaption b { font-weight: 600; }
 @media (max-width: 760px) {
@@ -177,7 +177,7 @@ section.band.on-blue + section.band, section.band + section.band.on-blue { borde
 
 /* About preview */
 .about-prev { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
-.about-prev img { width: 100%; border-radius: var(--r); aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 6%; }
+.about-prev img { width: 100%; border-radius: var(--r); aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 20%; height: auto; }
 blockquote { margin: 0; font-family: var(--f-display); font-size: clamp(1.25rem, 2.3vw, 1.6rem); line-height: 1.45; }
 @media (max-width: 640px) { .about-prev { grid-template-columns: 1fr; } .about-prev img { max-width: 11rem; } }
 

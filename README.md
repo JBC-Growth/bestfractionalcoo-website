@@ -14,7 +14,7 @@ Static site for bestfractionalcoo.com: a fractional COO practice for growing law
 | `/insights` | `insights.html` - article list and Founder Bottleneck Scorecard |
 | `/contact` | `contact.html` - Book a Fit Call form |
 
-Shared files: `styles.css`, `site.js`, `logo.jpg`, `victoria.jpg`.
+Shared files: `styles.css`, `site.js`, `logo.jpg`, `victoria-headshot.webp`.
 
 `vercel.json` turns on clean URLs, so `/services` serves `services.html`.
 
