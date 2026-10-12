@@ -5,10 +5,10 @@
   --ink: #1f2226;
   --muted: #545e68;
   --rule: #d8e1e8;
-  --deep: #e8ebee;
-  --deep-fg: #1f2226;
-  --deep-muted: #4c565f;
-  --deep-rule: #cfd6dc;
+  --deep: #1f2226;
+  --deep-fg: #f1f6f9;
+  --deep-muted: #a2afba;
+  --deep-rule: #3a4047;
   --accent: #78cbec;
   --accent-hover: #5bbde4;
   --accent-fg: #1f2226;
@@ -24,20 +24,7 @@
   --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
   --wrap: 72rem;
   --r: 4px;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #0b0e11; --panel: #13181d; --ink: #e9eff3; --muted: #9ba8b3; --rule: #252d35;
-    --deep: #161c22; --deep-fg: #f1f6f9; --deep-muted: #a2afba; --deep-rule: #2c353d;
-    --accent: #78cbec; --accent-hover: #9bd9f2; --accent-fg: #1f2226; --accent-text: #8fd6f2; --tint: #14232d; --ok: #8fd6f2; --logo-pad: 0.35rem 0.6rem;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #0b0e11; --panel: #13181d; --ink: #e9eff3; --muted: #9ba8b3; --rule: #252d35;
-  --deep: #161c22; --deep-fg: #f1f6f9; --deep-muted: #a2afba; --deep-rule: #2c353d;
-  --accent: #78cbec; --accent-hover: #9bd9f2; --accent-fg: #1f2226; --accent-text: #8fd6f2; --tint: #14232d; --ok: #8fd6f2; --logo-pad: 0.35rem 0.6rem;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -89,7 +76,7 @@ footer .brand img { height: 2.75rem; }
 .btn.sm { padding: 0.6rem 1rem; font-size: 0.74rem; }
 .nav .btn { color: var(--accent-fg); border-bottom: 1.5px solid var(--accent); }
 .on-deep .btn.ghost { color: var(--deep-fg); border-color: var(--deep-fg); }
-.on-deep .btn.ghost:hover { background: var(--paper); }
+.on-deep .btn.ghost:hover { background: rgba(255,255,255,0.08); }
 .actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
 
 /* Sections */
